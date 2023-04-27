@@ -33,7 +33,7 @@ To set up Snowflake, follow these steps:
 
 1. Log in to Snowflake with your credentials.
 2. Navigate to the Inspection Database from Databases.
-3. Create a worksheet and run the Check_Data query.
+3. Create a worksheet and run the Check_Data_SQL query.
 
 ## Contributing
 If you would like to contribute to this project, please create a pull request.
