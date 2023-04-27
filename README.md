@@ -1,52 +1,45 @@
-# Building an ELT Pipeline in Python and Snowflake
+# ELT Pipeline with Databricks, Python and Snowflake
 
-Extracting, Loading and Transforming Datausing Databricks
+This project demonstrates how to build a simple ELT pipeline in Python and Snowflake, using the New York City Restaurant Inspection Results data from NYC Open Data. We will extract the data, load it into Snowflake, and transform it using SQL to find the number of inspections that took place in various boroughs of New York, broken down by year.
 
-In this small Project, we’ll demonstrate how to build a simple ELT pipeline in Python, Databricks using New York City Restaurant Inspection Results data from NYC open data. 
-DOHMH provide an Open API to their data. We will extract the data from NYC Open Data, load it into Snowflake, and then transform it using SQL.
+This Idea was taken from Medium Article from **Dhilip Subramanian**
+* Article: https://rb.gy/m3mhv 
 
-We will find the number of inspections that took place in various boroughs of New York, broken down by year. Our pipeline involves three steps:
+## Project Flow
 
-Here is the Pipeline flow representation: 
+Here's a visual representation of the pipeline flow:
 
 ![image](https://user-images.githubusercontent.com/60131764/234843692-c8470c4e-d61e-4713-900f-de62b300dbcf.png)
 
-1. Extracting the necessary data from NYC Open Data in JSON form using databricks
-2. Loading the data into Snowflake using Snowflake Python connector
-3. Executing a query inSnowflake to perform the desired analysis.
+1. Extract the necessary data from NYC Open Data in JSON format using Databricks.
+2. Load the data into Snowflake using the Snowflake Python connector.
+3. Execute a query in Snowflake to perform the desired analysis.
 
-Step 1: 
-1. Log in to Databricks Community Edition
-2. Create a Spark Compute
-3. From Workspace create a python Notebook
+## Getting Started
 
-Step 2: 
-1. Attach Cluster to Python Notebook
- 
-Now you are into Python Notebook with Spark Cluster attached to it
+To get started with this project, follow these steps:
 
-Step 3: 
-1. Create a Snowflake account 
-2. Under Profile get your user name and pass it in 2nd paremeter
-<img width="707" alt="image" src="https://user-images.githubusercontent.com/60131764/234847482-dbbaa59a-48df-400c-8e59-95a3eb455935.png">
-3. Copy account URL and remove https:// and .snowflakecomputing.com from it 
-pass the remaining into 1st parameter of upload_data_to_snowflake function 
-follow for reference
-Account URL: https : https://iv55423.central-india.azure.snowflakecomputing.com
-Account paramater to pe passed : iv55423.central-india.azure
+1. Log in to Databricks Community Edition.
+2. Create a Spark compute.
+3. Create a Python notebook in Databricks.
+4. Attach the Spark cluster to the notebook.
+5. Create a Snowflake account.
+6. Copy the Snowflake account URL and username into the Python notebook.
+7. Run the cells in the Python notebook in sequence.
 
-<img width="725" alt="image" src="https://user-images.githubusercontent.com/60131764/234848182-0b5bdea3-e377-4343-bbd6-3921252b66b1.png">
+## Snowflake Setup
 
-> Run all the cell in sequence
+To set up Snowflake, follow these steps:
 
-And Login to Snowflake with your credentials
+1. Log in to Snowflake with your credentials.
+2. Navigate to the Inspection Database from Databases.
+3. Create a worksheet and run the Check_Data query.
 
-Navigate to Inspection Database from Databases
+## Contributing
+If you would like to contribute to this project, please create a pull request.
 
-Create a Worksheet & Run below Check_Data Query: 
 
-Bravo 😎😎!
-You have Succefully implemented pipeline 🚀
+
 
 
 
